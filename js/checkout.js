@@ -1,0 +1,2 @@
+updateCart(false, checkoutProducts);
+

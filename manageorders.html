@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+
+
+<body style="height: 100vh;" class="">
+
+    <nav id="navRoot" class="navbar mb-5 bg-white"></nav>
+    <div class="alertsClass" id="alerts"></div>
+
+    <div class="container-sm p-5">
+        <p class="h3 text-center">My Orders</p>
+
+        <div class="row my-4">
+            <div class="col-12 my-3">
+                <input id="filterOrderSearch" class="form-control rounded-0" list="datalistOptions" id="exampleDataList"
+                    placeholder="Type to search by id...">
+            </div>
+
+        </div>
+
+
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Email</th>
+                    <th>Date</th>
+                    <th>Payment</th>
+                    <th>Total</th>
+                    <th>Approve</th>
+                    <th>Decline</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+        </script>
+    <script src="js/script.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/manageorders.js"></script>
+</body>
+
+</html>

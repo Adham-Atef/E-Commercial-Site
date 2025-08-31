@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+
+
+<body style="height: 100vh;" class="">
+
+    <nav id="navRoot" class="navbar mb-5 bg-white"></nav>
+    <div class="alertsClass" id="alerts"></div>
+
+    <p class="h2 text-center mb-5">#<span id="editProductID">5</span> Product</p>
+    <div class="container-sm">
+
+        <form id="addProductForm" class="row g-3">
+            <div class="col-12">
+                <label for="inputProductTitle" class="form-label">Product Title</label>
+                <input type="text" class="form-control" id="inputProductTitle">
+            </div>
+            <div class="col-12">
+                <label for="inputProductPrice" class="form-label">Price</label>
+                <input type="text" class="form-control" id="inputProductPrice">
+            </div>
+            <div class="col-12">
+                <label for="inputProductCategory" class="form-label">Category</label>
+                <input type="text" class="form-control" id="inputProductCategory">
+            </div>
+            <div class="col-12">
+                <label for="inputProductImageUrl" class="form-label">Image Url</label>
+                <input type="text" class="form-control" id="inputProductImageUrl">
+            </div>
+            <div class="col-12">
+                <label for="inputProductDescription" class="form-label">Description</label>
+                <textarea class="form-control" id="inputProductDescription"></textarea>
+            </div>
+            <div class="col-md-6">
+                <label for="inputProductCompany" class="form-label">Company</label>
+                <input type="text" class="form-control" id="inputProductCompany">
+            </div>
+            <div class="col-md-6">
+                <label for="inputProductSeller" class="form-label">Seller</label>
+                <input type="text" class="form-control" id="inputProductSeller">
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="checkProductInactive">
+                    <label class="form-check-label" for="checkProductInactive">
+                        Make inactive
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button id="addProductBtn" type="submit" class="w-100 btn btn-primary">Edit</button>
+            </div>
+        </form>
+
+
+    </div>
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+        </script>
+    <script src="js/script.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/editproduct.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+
+<body style="height: 100vh;" class="">
+
+    <nav id="navRoot" class="navbar mb-5 bg-white"></nav>
+    <div class="alertsClass" id="alerts"></div>
+
+
+    <div class="mt-5 d-flex justify-content-center align-items-center">
+        <div class="container bg-white">
+            <div style="min-height: 700px" class="row justify-content-between flex-lg-row flex-column-reverse">
+
+                <div class="col-lg-8">
+                    <div class="h-100" style=" border-right: 1px solid black; ">
+                        <div id="shippingContainer" class="container-fluid py-5 px-2">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row py-5 px-2">
+                        <div class="col-12 text-center mb-5">
+                            <div class="btn-group  " role="group" aria-label="Basic outlined example">
+                                <button id="checkoutCartBtn" type="button" class="btn btn-outline-primary">Cart</button>
+                                <button id="checkoutDeliveryBtn" type="button" class="btn btn-primary">Delivery</button>
+                                <button id="checkoutPaymentBtn" type="button"
+                                    class="btn btn-outline-primary">Payment</button>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <h4>Order Summary</h4>
+                        </div>
+                        <div class="col-12">
+                            <div class="order-text d-flex justify-content-between">
+                                <div class="text-right">
+                                    <p class="text-secondary">Subtotal</p>
+                                </div>
+                                <div class="text-left text-end h6">
+                                    <p> <span id="subtotalPrice"></span> $</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="checkoutShippingSummary" class="col-12">
+                            <hr class="my-3">
+                            <div class="order-text d-flex justify-content-between">
+                                <div class="text-right">
+                                    <p class="text-danger">Shipping Fees </p>
+                                </div>
+                                <div class="text-left text-end text-danger h6">
+                                    <p>-<span id="shippingFees"></span> $</p>
+                                </div>
+                            </div>
+                            <hr class="my-3">
+                        </div>
+                        <div id="checkoutTotalSummary" class=" d-none">
+                            <div class="row py-2">
+                                <div class="col-6">
+                                    <h5>Total <sup class="text-secondary" style="font-weight: normal;">(Inclusive of
+                                            VAT)</sup></h5>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <h4 style="font-weight: bolder;"><span id="totalShippingPrice">50</span> $</h4>
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <button id="proceedToBuy" class="btn w-100 btn-danger">Proceed to Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+        </script>
+    <script src="js/script.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/checkout.js"></script>
+    <script src="js/shipping.js"></script>
+</body>
+
+</html>

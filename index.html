@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+
+<body>
+    <nav id="navRoot" class="navbar mb-5 bg-white"></nav>
+    <div class="alertsClass" id="alerts"></div>
+
+
+
+
+
+    <div class="container-lg">
+        <p class="h2 text-center mb-5" style="text-transform: uppercase;">Welcome to our Store</p>
+
+        <div class="container-fluid">
+            <div class="row px-4">
+                <div class="col-lg-4">
+                    <select id="searchSelect" class="form-select rounded-0" aria-label="Default select example">
+                        <option value="0" selected>Search by product name</option>
+                        <option value="1">Search by Category name</option>
+
+                    </select>
+                </div>
+                <div class="col-lg-6  my-lg-0 my-3">
+                    <input id="searchBar" class="form-control rounded-0" list="datalistOptions" id="exampleDataList"
+                        placeholder="Type to search...">
+                </div>
+                <div class="col-lg-2 text-center"><button type="button" id="searchBtn"
+                        class="btn btn-secondary w-100 rounded-0">Search</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="container-fluid my-5">
+            <div id="products-container" class="row align-items-center g-0">
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>
