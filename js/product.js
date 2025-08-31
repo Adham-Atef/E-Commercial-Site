@@ -72,8 +72,8 @@ const drawPageProduct = () => {
         console.log(allRate)
         console.log(product.reviews.length)
         productViewContainer.innerHTML = `
-        <div style="position: relative;" class="col-lg-4">
-            <img class="img-fluid" src="${product.imageUrl}" alt="${product.title}">
+        <div style="position: relative;" class="col-lg-4 col-8">
+            <img class="img-fluid w-100" src="${product.imageUrl}" alt="${product.title}">
             <div style="position: absolute; top: 0;left: 100%; transform: translate(-150%,50%);">
                 ${isWish === -1
                 ? `<i class="fa-regular fa-heart wishlist text-danger" style="font-size: 2rem; cursor:pointer;"></i>`
