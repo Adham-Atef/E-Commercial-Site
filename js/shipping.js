@@ -1,3 +1,5 @@
+
+
 const shippingContainer = document.querySelector("#shippingContainer");
 const checkoutCartBtn = document.querySelector("#checkoutCartBtn");
 const checkoutDeliveryBtn = document.querySelector("#checkoutDeliveryBtn");

@@ -1,4 +1,6 @@
-
+if (!currentUser) {
+    window.location.href = "index.html"
+}
 
 const wishlistProductViewContainer = document.querySelector("#wishlistProductViewContainer")
 

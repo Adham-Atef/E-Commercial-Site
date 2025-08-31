@@ -1,3 +1,7 @@
+if (!currentUser){
+    window.location.href = "index.html"
+}
+
 
 if (!localStorage.getItem("viewOrderID")) {
     window.location.href = "orders.html"

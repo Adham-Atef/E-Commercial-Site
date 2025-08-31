@@ -1,3 +1,8 @@
+if (!currentUser){
+    window.location.href = "index.html"
+}
+
+
 const tableBody = document.querySelector("#tableBody")
 const filterOrderSelect = document.querySelector("#filterOrderSelect")
 const filterOrderSearch = document.querySelector("#filterOrderSearch")
