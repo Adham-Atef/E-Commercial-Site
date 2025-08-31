@@ -75,11 +75,12 @@ nav.innerHTML = `
 const NavCartQuantity = document.querySelector("#NavCartQuantity")
 function calculateItemsQuantity() {
     let allItemsQuantity = 0;
-    currentUser.cart.forEach(
-        item => {
-            allItemsQuantity += item.quantity;
-        }
-    )
+    if (currentUser)
+        currentUser.cart.forEach(
+            item => {
+                allItemsQuantity += item.quantity;
+            }
+        )
     if (NavCartQuantity)
         NavCartQuantity.textContent = allItemsQuantity;
 }
