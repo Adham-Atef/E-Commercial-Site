@@ -1,6 +1,7 @@
 const nav = document.querySelector("#navRoot")
 
 
+
 const getTotalCartPrice = () => {
 
     const ourCart = [...currentUser.cart];
@@ -42,9 +43,10 @@ nav.innerHTML = `
                                 <li><a id="signout" class="dropdown-item" href="#">Signout</a></li>
                         </ul>
                     </div>
-                    <button id="show-btn" class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                        Show Cart
+                    <button id="show-btn" class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" style="position:relative">
+                        <i class="fa-solid fa-cart-shopping"></i> : 
+                        <span  class=" h6" id="NavCartQuantity">null</span>
                     </button>
                 </div>
                 <div id="login-nav" class="d-flex" style="gap: 10px;">
@@ -70,7 +72,19 @@ nav.innerHTML = `
             </div>
 `
 
+const NavCartQuantity = document.querySelector("#NavCartQuantity")
+function calculateItemsQuantity() {
+    let allItemsQuantity = 0;
+    currentUser.cart.forEach(
+        item => {
+            allItemsQuantity += item.quantity;
+        }
+    )
+    if (NavCartQuantity)
+        NavCartQuantity.textContent = allItemsQuantity;
+}
 
+calculateItemsQuantity()
 
 const userNav = document.querySelector("#user-nav")
 const userLogin = document.querySelector("#login-nav")

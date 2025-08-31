@@ -178,7 +178,7 @@ const decreaseProduct = (itemRefIndex, isCart = true) => {
     }
 
     updateUsers()
-
+    calculateItemsQuantity()
 }
 
 const increaseProduct = (itemRefIndex, isCart = true) => {
@@ -201,7 +201,7 @@ const increaseProduct = (itemRefIndex, isCart = true) => {
 
     }
     updateUsers()
-
+    calculateItemsQuantity()
 
 }
 

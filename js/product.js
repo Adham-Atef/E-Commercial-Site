@@ -168,6 +168,7 @@ const drawPageProduct = () => {
         addToPageCart.addEventListener("click",
             () => {
                 addToCart(product)
+                calculateItemsQuantity()
             }
         )
         const wishlistIcon = productViewContainer.querySelector(".wishlist");

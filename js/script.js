@@ -231,6 +231,7 @@ const addToCart = product => {
             addProductAlert(product);
         }
         updateUsers(); // to save cart in local storage msh el current session !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        calculateItemsQuantity()
 
     } else {
         window.location.href = "login.html"
