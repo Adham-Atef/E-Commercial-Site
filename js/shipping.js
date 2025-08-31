@@ -138,7 +138,8 @@ const drawCheckout = () => {
 };
 
 const updateShippingContainer = () => {
-    subtotalPrice.textContent = (JSON.parse(localStorage.getItem("orderToBePlace")).totalPrice + Number(localStorage.getItem("shippingFees"))).toFixed(2);
+    subtotalPrice.textContent = (JSON.parse(localStorage.getItem("orderToBePlace")).totalPrice - Number(localStorage.getItem("shippingFees")) + 2.5).toFixed(2);
+    // checkoutTotalSummary.textContent = (JSON.parse(localStorage.getItem("orderToBePlace")).totalPrice + Number(localStorage.getItem("shippingFees"))).toFixed(2);
     shippingContainer.innerHTML = drawCheckout();
     bindEvents();
 

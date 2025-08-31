@@ -6,7 +6,7 @@ const sendOrder = (totalPrice, totalQuantity,) => {
     orderToBePlace = {
         id: localStorage.getItem("lastOrderID"),
         order: cartToBeSend,
-        totalPrice: totalPrice + Number(localStorage.getItem("shippingFees")),
+        totalPrice: totalPrice + Number(localStorage.getItem("shippingFees")) - 2.5,
         totalQuantity: totalQuantity,
         createdAt: new Date().toUTCString(),
         orderStatus: "pending",
@@ -118,13 +118,11 @@ const updateCart = (cart = true, cont = cartContainer) => {
                                 <div class="text-right">
                                     <p class="text-secondary">Subtotal (<span>${totalQuantity}
                                     </span> items)</p>
-                                    <p>Coupon</p>
-                                    <p class="text-secondary">Shipping Fee</p>
+                                    <p class="h6 text-success">Coupon</p>
                                 </div>
                                 <div class="text-left text-end">
                                     <p>${totalPrice.toFixed(2)} $</p>
-                                    <p>- EGP 5259.50</p>
-                                    <p>EGP 5259.50</p>
+                                    <p class="h6 text-success">- 2.5 $</p>
                                 </div>
                             </div>
                             <div class="alert alert-success px-3 py-1" role="alert">
@@ -137,7 +135,7 @@ const updateCart = (cart = true, cont = cartContainer) => {
                                             of VAT)</sup></h5>
                                 </div>
                                 <div class="col-6 text-end">
-                                    <h4 style="font-weight: bolder;">${totalPrice.toFixed(2)} $</h4>
+                                    <h4 style="font-weight: bolder;">${totalPrice.toFixed(2) - 2.5} $</h4>
                                 </div>
                             </div>
                             <button onclick="sendOrder(${totalPrice},${totalQuantity})" class="btn btn-primary w-100 rounded">CHECKOUT</button>

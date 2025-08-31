@@ -47,6 +47,7 @@ addProductForm.addEventListener("submit", e => {
         company: inputProductCompany.value.trim(),
         seller: inputProductSeller.value.trim(),
         isActive: !checkProductInactive.checked,
+        reviews: products[productIndex].reviews,
     }
     products[productIndex] = productObj
     localStorage.setItem("products", JSON.stringify(products))
