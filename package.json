@@ -1,0 +1,35 @@
+{
+  "name": "e-commerce-vanilla-js",
+  "version": "1.0.0",
+  "description": "A fully functional e-commerce web application built with HTML, CSS (Bootstrap), and Vanilla JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "build": "node build.js",
+    "start": "npx http-server . -p 3000 -o",
+    "dev": "npx http-server . -p 3000 -o -c-1"
+  },
+  "keywords": [
+    "e-commerce",
+    "vanilla-javascript",
+    "html5",
+    "css3",
+    "bootstrap",
+    "shopping-cart",
+    "localstorage",
+    "no-backend"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "archiver": "^6.0.1",
+    "http-server": "^14.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/e-commerce-vanilla-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/e-commerce-vanilla-js/issues"
+  },
+  "homepage": "https://github.com/your-username/e-commerce-vanilla-js#readme"
+}
